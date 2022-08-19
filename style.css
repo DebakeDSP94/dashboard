@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+}
+
+.container {
+	width: 100vw;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	grid-template-rows: 40px 80px 20px 1fr;
+}
+
+.sidebar {
+	display: grid;
+	grid-column: 1 / 2;
+	height: 100vh;
+	grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 4fr;
+	background-color: #60a5fa;
+	color: white;
+}
+
+.dashboard {
+	align-self: center;
+	font-size: 1.6rem;
+	grid-row: 1 / 2;
+	font-weight: 700;
+	padding-left: 1rem;
+}
+
+.side-item {
+	align-self: center;
+	justify-self: left;
+	padding-left: 1rem;
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	padding-left: 0.5rem;
+}
+
+.home {
+	grid-row: 2 / 3;
+}
+
+.profile {
+	grid-row: 3 / 4;
+}
+
+.messages {
+	grid-row: 4 / 5;
+}
+
+.history {
+	grid-row: 5 / 6;
+}
+
+.tasks {
+	grid-row: 6 / 7;
+}
+
+.communities {
+	grid-row: 7 / 8;
+}
+
+.settings {
+	grid-row: 9 / 10;
+}
+
+.support {
+	grid-row: 10 / 11;
+}
+
+.privacy {
+	grid-row: 11 / 12;
+}
+
+.search-bar {
+	grid-column: 2 / 4;
+	grid-row: 1 / 2;
+	display: grid;
+	grid-template-columns: 1.5fr 16fr 1fr 2fr 4fr;
+}
+
+.search-container {
+	align-self: end;
+}
+
+.search {
+	width: 80%;
+	height: 1.5rem;
+	border-radius: 0.75rem;
+	border: none;
+	background-color: #e5e7eb;
+}
+
+.magnify-container {
+	align-self: end;
+	justify-self: center;
+}
+
+.bellicon-container {
+	align-self: end;
+}
+
+.icon-container {
+	align-self: end;
+}
+
+.name-container {
+	align-self: center;
+	font-weight: 700;
+}
+
+.nav-bar {
+	display: grid;
+	grid-column: 2 / 4;
+	grid-row: 2 / 3;
+	grid-template-columns: 1fr 6fr 1fr 1fr 1fr;
+}
+
+.lg-icon {
+	height: 50px;
+}
+
+.lg-icon-container {
+	justify-self: end;
+	align-self: end;
+}
+
+.title-text {
+	align-self: end;
+	align-items: end;
+	margin-left: 20px;
+}
+
+h3 {
+	margin-top: -25px;
+}
+
+.button-container {
+	align-self: end;
+	justify-self: center;
+}
+
+button {
+	width: 4.5rem;
+	height: 1.5rem;
+	border-radius: 0.75rem;
+	background-color: #60a5fa;
+	color: white;
+	font-size: 10px;
+	font-weight: 700;
+	border: none;
+}
