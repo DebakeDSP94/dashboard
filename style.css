@@ -26,7 +26,7 @@ body {
 	grid-column: 1 / 2;
 	height: 100vh;
 	grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 4fr;
-	background-color: #60a5fa;
+	background-color: #5197f3;
 	color: white;
 }
 
@@ -113,7 +113,7 @@ a {
 }
 
 .bellicon-container {
-	align-self: end;
+	align-self: center;
 }
 
 .icon-container {
@@ -129,6 +129,7 @@ a {
 	display: grid;
 	grid-column: 2 / 4;
 	grid-row: 2 / 3;
+	z-index: 100;
 	grid-template-columns: 1fr 6fr 1fr 1fr 1fr;
 	box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 3px;
 }
@@ -189,10 +190,11 @@ button {
 }
 
 .card-container {
+	max-height: 100%;
 	display: grid;
 	grid-column: 2 / 3;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 60px;
+	grid-template-rows: 1fr 1fr 1fr 40px;
 	gap: 20px;
 	background-color: #e5e7eb;
 }
@@ -210,7 +212,6 @@ button {
 }
 .card {
 	background-color: white;
-	height: 200px;
 	border-radius: 6px;
 	justify-items: left;
 	padding-left: 20px;
@@ -235,4 +236,96 @@ button {
 	width: 100%;
 	justify-content: end;
 	grid-template-columns: 3fr 1fr 1fr 1fr;
+}
+
+.right-bar {
+	display: grid;
+	grid-template-rows: 1fr 40px 1fr 60px;
+	background-color: #e5e7eb;
+	max-height: 100%;
+}
+
+.announcements {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	align-items: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 0.7rem;
+	border-radius: 10px;
+	margin-right: 15px;
+	box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+	background-color: white;
+}
+
+.bb {
+	border-bottom: 1px solid grey;
+	padding-bottom: 15px;
+}
+
+.notice-header {
+	font-size: 0.8rem;
+	font-weight: 700;
+}
+
+.notice-text {
+	font-size: 0.5rem;
+}
+
+.trending {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	background-color: white;
+	margin-right: 15px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+	padding: 20px;
+}
+
+.trending-header {
+	font-weight: 600;
+	font-size: 0.95rem;
+	align-self: end;
+}
+
+.tagline {
+	font-size: 0.7rem;
+	font-weight: 600;
+}
+
+.avatar {
+	display: grid;
+	align-self: center;
+	justify-self: start;
+}
+
+.catchphrase {
+	font-size: 0.6rem;
+}
+
+.profiles {
+	display: grid;
+	grid-template-columns: 10px 1fr 2fr 20px;
+	align-items: center;
+	justify-items: start;
+}
+
+.profile1 {
+	display: grid;
+	grid-row: 1 / 2;
+}
+
+.profile2 {
+	display: grid;
+	grid-row: 2 / 3;
+}
+
+.profile3 {
+	display: grid;
+	grid-row: 3 / 4;
+}
+
+.profile4 {
+	display: grid;
+	grid-row: 4 / 5;
 }
